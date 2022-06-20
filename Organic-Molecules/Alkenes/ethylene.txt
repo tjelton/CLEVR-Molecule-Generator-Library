@@ -1,0 +1,29 @@
+/*
+Script Prepared on 20-Jun-22.
+Coordinates from: https://cccbdb.nist.gov/geom1x.asp
+C2H4 > Name = Ethylene, State = ground, Conformer = minimum > composite: G2
+*/
+
+ELEMENTS {
+
+    1, C, 0.0000000, 0.0000000, 0.6675110;
+    2, C, 0.0000000, 0.0000000, -0.6675110;
+    3, H, 0.0000000, 0.9229230, 1.2376240;
+    4, H, 0.0000000, -0.9229230, 1.2376240;
+    5, H, 0.0000000, -0.9229230, -1.2376240;
+    6, H, 0.0000000, 0.9229230, -1.2376240;
+
+}
+
+BONDS {
+
+    // C=C bond.
+    1=2;
+
+    // C-H bonds.
+    1-3;
+    1-4;
+    2-5;
+    2-6;
+
+}
